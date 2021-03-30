@@ -1,5 +1,7 @@
 from sql_data.Repo.conversation_repo import store_conversations
-from sql_data.Repo.movie_repo import store_characters, store_movies
+from sql_data.Repo.movie_repo import store_characters, store_movies, fix_genres, delete_duplicate_genres
+
+
 # from mongo_data.Repo.movie_repo import *
 
 
@@ -95,7 +97,9 @@ def extract_conversation_data():
 def main():
     # extract_movie_data()
     # extract_character_data()
-    extract_conversation_data()
+    # extract_conversation_data()
+     fix_genres()
+    # delete_duplicate_genres()
 
 
 if __name__ == '__main__':
