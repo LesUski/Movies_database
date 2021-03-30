@@ -21,7 +21,7 @@ class ConversationLine(Base):
     conversations_conversation_id = sa.Column(sa.Integer, sa.ForeignKey('conversations.conversation_id'))
     movie_lines_line_id = sa.Column(sa.String(8), sa.ForeignKey('movie_lines.line_id'), nullable=False)
 
-    text_line = relationship('MovieLine')
+    text_line = relationship('MovieLine', uselist=False)
 
 
 class MovieLine(Base):

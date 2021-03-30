@@ -1,5 +1,5 @@
-from sql_data.Repo.movie_repo import store_characters
-from mongo_data.Repo.movie_repo import *
+from sql_data.Repo.movie_repo import store_characters, store_movies
+# from mongo_data.Repo.movie_repo import *
 
 
 def extract_movie_data():
@@ -53,12 +53,11 @@ def extract_movie_lines():
                 'line_text': line_data[4]
             }
         lines.append(line_dict)
-        #print(lines)
 
 
 def main():
-    # extract_movie_data()
-    extract_character_data()
+     extract_movie_data()
+     extract_character_data()
     # extract_movie_lines()
 
     # all_movies = find(movie_year=1994)
