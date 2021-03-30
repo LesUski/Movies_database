@@ -1,6 +1,6 @@
-from sql_data.Repo.conversation_repo import store_conversations
-from sql_data.Repo.movie_repo import store_characters, store_movies
-# from mongo_data.Repo.movie_repo import *
+from mongo_data.Repo.character_repo import store_characters
+from mongo_data.Repo.conversation_repo import store_conversations
+from mongo_data.Repo.movie_repo import *
 
 
 def extract_movie_data():

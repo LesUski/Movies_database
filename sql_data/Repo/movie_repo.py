@@ -21,3 +21,6 @@ def store_characters(characters):
 
 def get_movie_by_id(id):
     return session.query(Movie).filter(Movie.movie_id == id).first()
+
+
+def fix_genres():
